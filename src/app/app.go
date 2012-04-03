@@ -2,6 +2,7 @@ package main
 
 import (
 	"code.google.com/p/gorilla/mux"
+	testpkg "launchpad.net/heroku-buildpack-go-testpkg"
 	"net/http"
 	"os"
 	"consts"
@@ -18,5 +19,5 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, consts.MESSAGE)
+	fmt.Fprintf(w, consts.MESSAGE+"\n"+testpkg.GiveMeMyString())
 }
