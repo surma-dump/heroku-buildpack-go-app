@@ -1,1 +1,1 @@
-web: app
+web: heroku-buildpack-go-app
