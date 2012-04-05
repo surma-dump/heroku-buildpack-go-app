@@ -5,7 +5,7 @@ import (
 	testpkg "launchpad.net/heroku-buildpack-go-testpkg"
 	"net/http"
 	"os"
-	"consts"
+	"heroku-buildpack-go-app/consts"
 	"fmt"
 )
 
